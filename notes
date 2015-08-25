@@ -1,0 +1,6 @@
+8/25/2015
+
+git add filename
+git commit -m 'message'
+git status 
+git push
