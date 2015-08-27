@@ -1,6 +1,12 @@
 /*
  * Programming Challenge 2
+ * 8/26/2015
+ *
+ *Written by Steven Ngo
+ *Created on 8/26/2015
+ *
  */
+ 
 #include <cassert>
 #include <cmath>
 #include <iostream>
@@ -33,6 +39,12 @@ int main (int argc, char* argv[]) {
  */
 bool isFactor (int numerator, int denominator) {
 	// CODE HERE
+	int remainder = numerator % denominator;
+	
+	if (remainder > 0)
+		return false;
+	else if (remainder == 0 )
+		return true;
 }
 
 /*
@@ -50,6 +62,15 @@ bool isFactor (int numerator, int denominator) {
  */
 void makeChange (int initialValue, int& quarters, int& dimes, int& nickels, int& pennies) {
 	// CODE HERE
+	int newValue = initialValue;
+	quarters = newValue/25;
+	newValue = newValue - quarters * 25;
+	dimes = newValue/10;
+	newValue = newValue - dimes * 10;
+	nickels = newValue/5;
+	newValue = newValue - nickels * 5;
+	pennies = newValue;
+	
 }
 
 /*
@@ -71,6 +92,12 @@ double launchHumanCannonball (double initialVelocity, double launchAngle) {
 	// 3 compute final vertical/y velocity [yveloc = initialVecity * sin(radangle) * -1]
 	// 4 compute time of flight [flighttime = (yveloc) * 2 / -9.8]
 	// 5 compute horizontal/x distance traveled [xdistance = xveloc * flighttime]
+	double radAngle = launchAngle * (M_PI / 180);
+	double xVeloc = initialVelocity * cos(radAngle);
+	double yVeloc = initialVelocity * sin(radAngle) * -1;
+	double flightTime = yVeloc * 2 / -9.8;
+	double xDistance = xVeloc * flightTime;
+	return xDistance;
 }
 
 /*
