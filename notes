@@ -1,12 +1,40 @@
-8/25/2015
+
 
 git add filename
 git commit -m 'message'
 git status 
 git push
 
+ls                                                                              lists files
+rm                                                                              remove
 
-pc2 
-1. factor (numerator and denominator)
+g++ filename                                                                    compile file and then links code with any library to be executable
+g++ -o executableName fileName                                                  lets you name executable
+g++ -c sep-1.cpp                                                                only does step 1, only gives object file not executable
+g++ -o executableName fileName fileName2                                        ties together 2 files
+    you can save time by compiling just pieces you need to recompile w/ -c and
+    link them together when finished
+./filename                                                                      run file
 
-2. 
+
+Make Files{
+titled "Makefile"
+
+hello: sep-1.o functions.o                                                      target: dependency1 dependency2
+    g++ -o hello sep-1.o functions.o                                            action taken to produce 
+    
+sep-1.o: sep-1.cpp
+    g++ -c sep-1.cpp
+    
+functions.o: functions.cpp
+    g++ -c functions.cpp
+    
+clean:
+    rm *.o                                                                      removes .o
+cleanall:
+    rm *.o hello                                                                removes .o and executable
+    }
+in command line:
+make                                                                            excecutes the commands, skips unchanged files to save time
+make functions.o                                                                makes specific target
+make cleanall                                                                   cleans all

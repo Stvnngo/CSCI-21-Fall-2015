@@ -23,6 +23,8 @@ int main (int argc, char* argv[]) {
 	char programmedBefore = 'z';
 	// 3 display a welcome message to standard output
 	cout << "Welcome" << endl;
+	int i = 100/25;
+	cout << i;
 	// 4 prompt the user for a name
 	cout << "What is your name? ";
 	// 5 read in the name from standard input and store
