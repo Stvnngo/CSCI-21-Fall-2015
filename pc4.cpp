@@ -63,8 +63,8 @@ string makeString (string label, double value, char separator) {
  *         when value is length 0 or value is length > 1
  */
 char stringToChar (string value) {
-	// CODE HERE
-	if(value.length() == 0 || value.length() > 1)
+	   // CODE HERE
+	if(value.length() > 1 || value.length() == 0)
 	    return('\0');
     else
 	    return(value[0]);
