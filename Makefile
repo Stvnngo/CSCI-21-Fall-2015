@@ -9,3 +9,9 @@ pc3: pc3.cpp
 	
 pc5: pc5.cpp
 	g++ -o pc5 pc5.cpp
+	
+pc6: pc6.cpp
+	g++ -o pc6 pc6.cpp
+		
+pc6: pc8.cpp
+	g++ -o pc8 pc8.cpp
