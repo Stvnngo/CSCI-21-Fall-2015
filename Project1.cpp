@@ -1,17 +1,77 @@
 /*
+ * Project1
  * Programming Project 1
+ *
+ * Steven Ngo
+ * Created: 9/18/2015
+ * Last date modified: 9/18/2015
+ * SOURCES USED: http://www.cplusplus.com/reference/cctype/isspace/
  */
+
 #include <cassert>
 #include <climits>
 #include <iostream>
 #include <string>
 using namespace std;
 
+/*
+ * function name: countCharacters
+ * parameters: string theString (call-by-value), int alpha (call-by-reference), int num (call-by-reference)
+ * default arguments: none
+ * return type: void
+ * 
+ * Counts the numbers of alphabetical letters and decimal digits.
+ */
 void countCharacters (string theString, int& alpha, int& num);
+
+/*
+ * function name: String upAndDown
+ * parameters: string theString (call-by-value)
+ * default arguments: none
+ * return type: string
+ * 
+ * Uppercase for first and every other character in a string, lowercase for all else.
+ */
 string upAndDown (string theString);
+
+/*
+ * function name: countWords
+ * parameters: string theString (call-by-value)
+ * default arguments: none
+ * return type: int
+ * 
+ * count the number of words with " " as delimiter
+ */
 int countWords (string theString);
+
+/*
+ * function name: computeAverage
+ * parameters: int[] values  (call-by-value), int arraySize (call-by-value)
+ * default arguments: none
+ * return type: int
+ * 
+ * Computes average of all values in array.
+ */
 int computeAverage (int values [], int arraySize);
+
+/*
+ * function name: findMinValue
+ * parameters: int[] values  (call-by-value), int arraySize (call-by-value)
+ * default arguments: none
+ * return type: int
+ * 
+ * Finds the minimum out of all values in array.
+ */
 int findMinValue (int values [], int arraySize);
+
+/*
+ * function name: findMaxValue
+ * parameters: int[] values  (call-by-value), int arraySize (call-by-value)
+ * default arguments: none
+ * return type: int
+ * 
+ * Finds the maximum out of all values in an array.
+ */
 int findMaxValue (int values [], int arraySize);
 
 /* for unit testing -- do not alter */
