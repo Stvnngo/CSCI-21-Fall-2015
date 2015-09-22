@@ -1,3 +1,5 @@
+
+
 pc1: pc1.cpp
 	g++ -o pc1 pc1.cpp
 	
@@ -13,5 +15,8 @@ pc5: pc5.cpp
 pc6: pc6.cpp
 	g++ -o pc6 pc6.cpp
 		
-pc6: pc8.cpp
+pc8: pc8.cpp
 	g++ -o pc8 pc8.cpp
+	
+pc9: pc9.cpp
+	g++ -o pc9 pc9.cpp
