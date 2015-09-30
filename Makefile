@@ -20,3 +20,6 @@ pc8: pc8.cpp
 	
 pc9: pc9.cpp
 	g++ -o pc9 pc9.cpp
+
+pc11: pc11.cpp
+	g++ -o pc11 pc11.cpp
