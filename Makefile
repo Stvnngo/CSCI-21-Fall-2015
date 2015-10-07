@@ -23,3 +23,6 @@ pc9: pc9.cpp
 
 pc11: pc11.cpp
 	g++ -o pc11 pc11.cpp
+	
+pc13: pc13.cpp
+	g++ -o pc13 pc13.cpp
