@@ -29,3 +29,6 @@ pc13: pc13.cpp
 	
 pc14: pc14.cpp
 	g++ $(FLAGS) -o pc14 pc14.cpp
+	
+pc15: pc15.cpp
+	g++ $(FLAGS) -o pc15 pc15.cpp
