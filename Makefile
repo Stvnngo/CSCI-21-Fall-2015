@@ -33,5 +33,14 @@ pc14: pc14.cpp
 pc15: pc15.cpp
 	g++ $(FLAGS) -o pc15 pc15.cpp
 	
-pc17: pc17.cpp
-	g++ $(FLAGS) -o pc17 pc17.cpp
+pc17: pc17.o SLNode.o
+	g++ $(FLAGS) -o pc17 pc17.o SLNode.o
+	
+pc17.o: pc17.cpp
+	g++ -c $(FLAGS) -c pc17.cpp
+	
+SLNode.o: SLNode.h SLNode.cpp
+	g++ $(FLAGS) -c SLNode.cpp
+
+clean:
+	rm -f *.o

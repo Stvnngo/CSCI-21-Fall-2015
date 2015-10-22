@@ -2,7 +2,7 @@
  * Programming Challenge 17 - UNIT TEST
  */
 
-// #include "SLNode.h"
+#include "SLNode.h"
 
 #include <cassert>
 #include <cstdlib>
@@ -14,55 +14,7 @@ template <typename X, typename A>
 void btassert(A assertion);
 void unittest ();
 
-class SLNode{
-	public:
-		//default constructor, sets values nextNode(NULL) and contents(0)
-		SLNode();
-		//overloaded constructor, int parameter assigned to contents
-		SLNode(int newContents);
-		//destructor, sets nextNode to NULL
-		~SLNode();
-		
-		void setContents(int newContents);
-		int getContents() const;
-		
-		void setNextNode (SLNode* newNode);
-		
-		SLNode* getNextNode () const;
-	private:
-		//nextNode, SLNode* that points to the next node in a singly-linked list
-		SLNode* nextNode;
-		//contents, int used to store the data contents of this SLNode
-		int contents;
-};
 
-SLNode::SLNode ()
-:nextNode(NULL), contents(0){}
-
-SLNode::SLNode (int newContents)
-:nextNode(NULL), contents(newContents){}
-
-SLNode::~SLNode (){
-	
-	nextNode = NULL;	
-	
-}
-
-void SLNode::setContents (int newContents){
-	contents = newContents;
-}
-
-int SLNode::getContents () const{
-	return contents;
-}
-
-void SLNode::setNextNode (SLNode* newNode){
-	nextNode = newNode;
-}
-
-SLNode* SLNode::getNextNode () const{
-	return nextNode;
-}
 
 int main () {
 	unittest();
