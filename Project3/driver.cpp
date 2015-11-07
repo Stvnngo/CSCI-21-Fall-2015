@@ -1,3 +1,13 @@
+/*
+ * Programming Project 3
+ * Created by: 
+ * Steven Ngo
+ * 
+ * Created: 11/5/15
+ * Last Modified: 11/6/15
+ * Sources used:
+ */
+
 #include "DLNode.h"
 #include "DLList.h"
 
